@@ -1,0 +1,339 @@
+.imagen{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.inicio{
+  position: relative;
+  width: 100%;
+  padding: 30px 30px;
+}
+.contact{
+  border-radius: 7px;
+}
+.form{
+  grid-area: form;
+}
+.info{
+  grid-area: info;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+}
+.map{
+  grid-area: map;
+}
+.contact{
+  padding: 40px;
+  background: #fff;
+}
+
+.col{
+  padding-top: 20px;
+  text-align: center;
+
+}
+
+.col p{
+  color: #fff;
+  font-size: 16px;
+}
+
+.form p{
+  font-size: 20px;
+}
+
+.card{
+  margin-bottom: 10px;
+}
+
+.box{
+  position:relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "form" "info" "map";
+  grid-gap: 20px;
+}
+
+.contact h3{
+  color: #005673;
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.formBox{
+  position: relative;
+  width: 100%;
+}
+
+.formBox .row50{
+  display: flex;
+  gap: 20px;
+}
+
+.inputBox{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.formBox .row100 .inputBox{
+  width: 100%;
+}
+
+.inputBox span{
+  color: #005673;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.inputBox textarea{
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+  resize: none;
+  min-height: 220px;
+  margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"]{
+  background: #639c9c;
+  color: #fff;
+  border: none;
+  font-size: 1.1em;
+  max-width: 120px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 15px;
+}
+
+.inputBox ::placeholder{
+  color:#999
+}
+
+.info{
+  background: #78abbb;
+}
+
+.info h3{
+  color: #fff;
+}
+
+
+
+
+
+.wrapper .boton{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  background: #1a4c5d;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.151);
+}
+
+.wrapper .boton:hover{
+  width: 225px
+}
+
+.wrapper .boton .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+}
+
+.wrapper .boton .icon img{
+  height: 55px;
+  line-height: 60px;
+}
+
+.wrapper .boton span{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+
+.map h1{
+  text-align: center;
+  position: relative;
+  font-size: 35px;
+  color: #1a4c5d;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.map h1::after{
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 3px;
+  background: #da4042;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.map{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.imagen{
+  border-radius: 15px;
+}
+
+
+.map div img{
+  margin-left: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  width: 120px;
+}
+
+.box{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.form{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.info p{
+  color: #fff;
+}
+
+.info .infobox div a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.sci{
+  margin-top: 30px;
+  display: flex;
+
+}
+
+
+.sci li{
+  list-style: none;
+  margin-right: 25px;
+}
+
+.sci li a{
+  font-size: 2em;
+
+}
+
+.alineacion{
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.cabecera{
+  background: #da4042;
+  color: #fff;
+  font-size: 20px;
+}
+
+.cards{
+  box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.151);
+}
+
+.map iframe{
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width:991px){
+
+  .wrapper .boton{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .wrapper .boton:hover{
+    width: 100%;
+  }
+
+.box{
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "form" "info" "map";
+}
+
+.map{
+  min-height: 300px;
+}
+
+.formBox .row50{
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+}
+
+.inputBox{
+  width: 100%;
+}
+
+.form{
+  text-align: center;
+}
+
+.contactUs{
+  position:relative;
+  width: 100%;
+  padding: 40px 40px;
+
+}
+
+}
+@media (max-width:991px){
+
+
+  .contact{
+    padding: 20px;
+  }
+
+
+}
+
+@media(max-width:500px){
+  .imagen{
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .inicio{
+    position: relative;
+    width: 100%;
+    padding: 10px 10px;
+  }
+}
+
+
+

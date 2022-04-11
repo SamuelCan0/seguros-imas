@@ -1,0 +1,132 @@
+
+
+.service{
+  padding: 100px 0;
+}
+
+.max-width{
+  max-width: 1300px;
+  padding: 0 45px;
+  margin: auto;
+}
+
+.max-width h1{
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+  color: #1a4c5d;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.max-width h1::after{
+  content: '';
+  position: absolute;
+  width: 170px;
+  height: 3px;
+  background: #da4042;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contents{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fondo{
+  background: #1a4c5df3;
+  color: #fff;
+}
+
+.cards{
+  padding: 50px 50px;
+  color: #fff;
+  width: calc(85% - 20px);
+  border-radius: 6px;
+  background: #1a4c5df3;
+  text-align: center;
+  user-select: none;
+  transition: color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+
+
+
+.imagen-canva{
+  width: 100px;
+  margin-bottom: 25px;
+}
+
+
+.boxs img{
+  width: 50%;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.boxs h3::after{
+  content: '';
+  position: absolute;
+  width: 170px;
+  height: 3px;
+  background: #da4042;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.boxs h3{
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.boxs ul{
+  margin-left: -25px;
+  list-style-type: none;
+}
+
+.boxs ul li{
+  font-size: 20px;
+}
+
+.boxs p{
+  font-size: 20px;
+}
+
+
+
+@media (max-width: 1190px) {
+  .cards{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 600px){
+  .boxs img{
+    width: 100%;
+  }
+
+  .boxs p{
+    font-size: 17px;
+  }
+
+  .boxs ul li{
+    font-size: 17px;
+  }
+
+  .boxs h3{
+    font-size: 20px;
+  }
+
+}

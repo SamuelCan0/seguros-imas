@@ -1,0 +1,20 @@
+<div class="service">
+  <div class="max-width">
+    <h1>{{titulo}}</h1>
+    <div class="contents">
+      <div class="cards">
+        <div class="boxs">
+          <p>{{info}}</p>
+          <p>{{info2}}</p>
+          <img src="{{logo}}" alt="">
+          <h3 *ngIf="subTitulo!=''">{{subTitulo}}</h3>
+          <ul>
+            <li *ngFor="let p of lista">
+              {{p}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

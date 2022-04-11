@@ -1,0 +1,101 @@
+
+
+.service{
+  padding: 100px 0;
+}
+
+.max-width{
+  max-width: 1300px;
+  padding: 0 45px;
+  margin: auto;
+}
+
+.max-width h1{
+  text-align: center;
+  position: relative;
+  font-size: 40px;
+  color: #1a4c5d;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.max-width h1::after{
+  content: '';
+  position: absolute;
+  width: 270px;
+  height: 3px;
+  background: #da4042;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contents{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fondo{
+  background: #1a4c5df3;
+  color: #fff;
+}
+
+.cards{
+  padding: 50px 50px;
+  width: calc(26% - 20px);
+  border-radius: 6px;
+  background: #9d9d9c70;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.cards:hover{
+  background-color: #1a4c5d;
+  color: #fff;
+}
+
+.boxs{
+  transform: all 0.3s ease;
+}
+
+.cards:hover .boxs{
+  transform: scale(1.05);
+}
+
+.imagen-canva{
+  width: 100px;
+  margin-bottom: 25px;
+}
+
+
+.boxs img{
+  width: 50px;
+  transition: color 0.3s ease;
+}
+
+.boxs h3{
+  font-size: 23px;
+  padding: 10px 0 7px;
+}
+
+@media (max-width: 1190px) {
+  .max-width{
+    padding: 0 25px;
+  }
+
+  .cards{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .cards{
+    width: 100%;
+  }
+}
